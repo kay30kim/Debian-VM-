@@ -196,4 +196,7 @@ vi /usr/local/bin/monitoring.sh
 
 $ sudo visudo
 사용자이름 ALL=(ALL) NOPASSWD: /usr/local/bin/monitoring.sh
+
+crontab -l
+crontab -e
 ```
