@@ -112,6 +112,7 @@ sudo reboot
 
 사용자 더하는거
 sudo adduser 사용자이름
+sudo userdel 사용자이름
 
 사용자 체크
 /etc/passwd | grep 사용자이름
