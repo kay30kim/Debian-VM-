@@ -152,7 +152,7 @@ sudo systemctl restart ssh
 ssh kay@localhost -p 4242
 ```
 
-### Part 6 - Configuration
+## Part 6 - Configuration
 > • Authentication using sudo has to be limited to 3 attempts in the event of an incorrect password.
 > • A custom message of your choice has to be displayed if an error due to a wrong password occurs when using sudo.
 > • Each action using sudo has to be archived, both inputs and outputs. The log file has to be saved in the /var/log/sudo/ folder.
