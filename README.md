@@ -80,7 +80,7 @@ AppArmor is a security framework for Linux that enhances the security of applica
 
 - Complain Mode: Complain mode records violations of the AppArmor profile rules but does not enforce them. Processes can potentially breach the policy, but these instances are logged for analysis. System administrators can use this information to fine-tune the profiles. Complain mode is useful for profile development and debugging.
 
-### Part 3 - Password Rule
+## Part 3 - Password Rule
 > • To set up a strong password policy, you have to comply with the following requirements:
 > • Your password has to expire every 30 days.
 > • The minimum number of days allowed before the modification of a password will be set to 2.
@@ -98,7 +98,7 @@ sudo visudo
 ```
 
 
-### Part 4 - USER & GROUP
+## Part 4 - USER & GROUP
 > • The hostname of your virtual machine must be your login ending with 42 (e.g.,wil42). You will have to modify this hostname during your evaluation.
 > • You have to implement a strong password policy.
 > • You have to install and configure sudo following strict rules.
@@ -129,7 +129,7 @@ groups 사용자이름
 
 ```
 
-### Part 5 - UFW & SSH
+## Part 5 - UFW & SSH
 > A SSH service will be running on port 4242 only. For security reasons, it must not be possible to connect using SSH as root
 > I had to configure your operating system with the UFW (or firewalld for Rocky) firewall and thus leave only port 4242 open.
 ```
@@ -172,7 +172,7 @@ sudo nano /etc/sudoers
 ```
 Require tty: (Why use tty? If some non-root code is exploited (a PHP script, for example), the requiretty option means that the exploit code won't be able to directly upgrade its privileges by running sudo.)
 
-### Part 7 - monitoring.sh
+## Part 7 - monitoring.sh
 *Monitoring.sh.*
 It must be developed in bash. At server startup, the script will display some information (listed below) on all terminals every 10 minutes (take a look at wall). The banner is optional. No error must be visible.
 
